@@ -5,4 +5,8 @@ def is_zero(n: str) -> bool:
     except (ValueError, TypeError):
         return False
 
-print(is_zero(input()))
+result = is_zero(input())
+if result:
+    print("This number is equal to zero.")
+else:
+    print("This number is different from zero.")
