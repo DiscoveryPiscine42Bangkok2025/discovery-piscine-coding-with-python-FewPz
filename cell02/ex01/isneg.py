@@ -1,4 +1,4 @@
-def is_negative(n: str) -> int:
+def is_negative(n: str) -> float:
     """
     Check if the input string represents a negative integer.
     
@@ -9,7 +9,7 @@ def is_negative(n: str) -> int:
         -99 if the input is not a valid integer.
     """
     try:
-        num = int(n)
+        num = float(n)
         if num < 0:
             return 1
         elif num == 0:
